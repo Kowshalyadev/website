@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://kit.fontawesome.com/446b235be3.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        #navitem2{
+    color:#323f4b;
+    font-family: "Roboto";
+}
+   
+#navitem2{
+    color:#323f4b;
+    font-family: "Roboto";
+}
+#navitem3{
+    color:#323f4b;
+    font-family: "Roboto";
+}
+#navitem4{
+    color:#323f4b;
+    font-family: "Roboto";
+}
+.apple{
+    width:50px;
+    height: 50px;
+    border-radius: 20px;
+}
+.banner-section-bg-container{
+    background-image: url("https://t4.ftcdn.net/jpg/01/12/64/23/240_F_112642319_NNbS2tRvZPJxnV62YtUSCAb3G2hjEOlR.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+h1{
+    color:black;
+    font-size: 40px;
+    text-align: center;
+
+}
+p{
+    color:black;
+    font-size:30px;
+    text-align: center;
+}
+button{
+    background-color:goldenrod;
+    border-radius: 8px;
+    color:white;
+    border: 0px;
+    width: 130px;
+    height: 45px;
+    margin-right: 10px;
+
+
+}
+.view{
+    background-color:transparent;
+    width: 130px;
+    height: 45px;
+    color:aqua;
+    border-style:solid;
+    border-width:1px;
+    border-radius: 20px;
+    border-color:aqua;
+    margin-left: 30vw;
+}
+.wcu-section{
+    background-color: aliceblue;
+}
+.wcu-section-heading{
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size:28px;
+    color:#183b56;
+}
+.wcu-section-paragraph{
+    font-family:"Roboto";
+    font-size:16px;
+    color:#5a7184;
+}
+.wcu-card{
+    background-color:white;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius:15px;
+    border-color: #e5eaf4;
+}
+.wcu-card-image{
+    height: 90px;
+    width: 100px;
+    border-radius: 20px;
+}
+.wcu-card-title{
+    font-family:"Roboto";
+    font-size:22px;
+    font-weight: 500;
+    color: #323f4b;
+}
+.wcu-card-description{
+    font-family:"Roboto";
+    font-size:18px;
+    color:#323f4b;
+}
+.offer{
+    color:#323f4b;
+    font-style: italic;
+    font-weight: 600;
+}
+.explore_menu_bg_color{
+    background-color:white;
+}
+.menu-item-card{
+    background-color: aliceblue;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius:16px;
+    border-color: #e5eaf4;
+}
+.dry_fruits-img{
+    height: 290px;
+    width:290px;
+    border-radius: 16px;
+}
+.menu-card-title{
+    color:#323f4b;
+    font-family: "Roboto";
+    font-size:20px;
+    font-weight: 600;
+    margin-top: 24px;
+}
+.menu_card_para{
+    color:#323f4b;
+    font-family:"Roboto";
+    font-size:12px;
+    font-weight: 100;
+}
+.healthy-food-section{
+    background-color: white;
+}
+.health_img_card{
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size:28px;
+    color:#183b56;
+    border-radius: 12px;
+}
+.healthy-food-section-heading{
+    color:#183b56;
+    font-size: 28px;
+    font-family: "Roboto";
+    font-weight: 700;
+}
+.healthy-food-section-description{
+    color:#5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+.custom-button{
+    color: white;
+    background-color: #d0b200;
+    width: 130px;
+    height: 45px;
+    border-width: 0;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+.payment-card-img{
+    width: 50px;
+    height: 40px;
+    margin-right: 28px;
+
+}
+.thank-you-bg-section{
+    background-color: blanchedalmond;
+    text-align: center;
+}
+.follow_us_section{
+    background-color: white;
+}
+.follow_us_section_heading{
+    text-align: center;
+    color: #183b56;
+    font-family: "Roboto";
+    font-size:28px;
+    font-weight: 700;
+}
+.follow_us_icon_container{
+    background-color: #faf7e8;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 15px;
+    padding-left: 22px;
+    padding-top: 22px;
+    padding-bottom: 16px;
+    padding-right: 14px;
+}
+.icon{
+    color:#d0b200;
+    font-size: 35px;
+}
+.explore_menu_heading{
+    font-size:28px;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="https://t3.ftcdn.net/jpg/02/71/78/72/240_F_271787297_umw9IKzA1dIquXZrb4pbisebe6mFiUGS.jpg" class="apple mr-3"/>SBP Frutis</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-link active" id="navitem1" href="#wcuSection">why choose us? <span class="sr-only">(current)</span></a>
+              <a class="nav-link" id="navitem2" href="#exploreMenuSection">Explore Menu</a>
+              <a class="nav-link" id="navitem3" href="#deliveryPaymentSection">delivery & Payment</a>
+              <a class="nav-link disabled" id="navitem4" href="#followUsSection" tabindex="-1" aria-disabled="true">follow us</a>
+        </div>
+          </div>
+          </div>
+        </nav>
+        <div class="banner-section-bg-container d-flex flex-row justify-content-center mt-5 pt-5">
+        <div>
+          <h1 class="pt-5">Get Delicious Frutis</h1>
+          <p>Eat Smart & Healthy</p>
+          <button>Order Now</button>
+          <button class="view">View Menu</button>
+        </div>
+  </div>
+  <div class="wcu-section pt-5 pb-5" id="wcuSection">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="wcu-section-heading pt-3 pb-3">why choose us?</h1>
+                <p class="wcu-section-paragraph">Fruits Provide nutrients vital for health and maintenance of your boby,such as fiber,vitaminc,potassium and folate.</p>
+            </div>
+            <div class="col-12">
+                <div class="wcu-card p-3 mb-3">
+                    <img src="https://www.clarifruit.com/wp-content/uploads/elementor/thumbs/Retailer-blog-post-image-q33z5wnge3mua1g2njdihq3cs1vvo4tcmdn3epu0rg.jpg" class="wcu-card-image"/>
+                    <h1 class="wcu-card-title mt-3">FRUITS SERVICE</h1>
+                    <p class="wcu-card-description">With increasing consumer demand for a wide variety of fruits and vegetables, the volume of fresh produce being moved globally rises every year. Between 2001 and 2019, the <span class="offer">Food and Agriculture Organization</span> of the UN reported this number rose from 170 million tons to 250 million.</p>
+                </div>
+                <div class="col-12">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://www.webcodemonster.com/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/f/r/fruit-store.jpg" class="wcu-card-image"/>
+                        <h1 class="wcu-card-title mt-3">FRUITS Store</h1>
+                        <p class="wcu-card-description">store them in an airtight container and always refrigerate cut produce. Fruits like apples, pears, bananas and avocados are not the best candidates for slicing ahead of time since they brown ...</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="wcu-card p-3 mb-3">
+                            <img src="https://www.pngitem.com/pimgs/m/196-1967449_transparent-special-offers-png-special-offer-hd-png.png" class="wcu-card-image"/>
+                            <h1 class="wcu-card-title mt-3">Best Offers</h1>
+                            <p class="wcu-card-description">Coupons & Offers upto <span class="offer">50% OFF</span> Exclusive Promo Codes on All Online Fruits Order.</p>
+                        </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="explore_menu_bg_color pt-3 pb-4 mt-5" id="exploreMenuSection">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="explore_menu_heading pb-3 m-5 pt-5 2048x1365-Pomegranate-SEO-GettyImages-502425210-0adfb4c">Explore Menu</h1>
+            </div>
+            <div class="col-12 col-md-4 p-3 mb-3">
+                <div class="menu-item-card shadow mb-3">
+                    <img src="https://zamindarkesar.com/wp-content/uploads/2021/03/mixed-dry-fruits.png" class="dry_fruits-img mt-2 mb-3"/>
+                    <h1 class="menu-card-title">Dry Fruits</h1>
+                    <p class="menu_card_para">Dried fruit is fruit that has had almost all of the water content removed through drying methods. The fruit shrinks during this process, leaving a small, energy-dense dried fruit.</p>
+                </div>
+            </div>
+             <div class="col-12 col-md-4 p-3 mb-4">
+                <div class="shadow menu-item-card">
+                    <img src="https://media.istockphoto.com/id/1414379743/photo/inside-the-banana-plantation.jpg?s=1024x1024&w=is&k=20&c=kZ1EyLdofebg2ei1s95-2RKTHIabHWwLKxICEWUSN6c=" class="dry_fruits-img mt-2 mb-3"/>
+                    <h1 class="menu-card-title">Banna</h1>
+                    <p class="menu_card_para">Bananas provide vitamins and minerals, including: Vitamin B6: A medium banana gives you about a quarter of the vitamin B6 you should get each day. It helps with metabolism. And it plays an important role in brain development during pregnancy and infancy, as well as immune system health.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 p-3 mb-3">
+                <div class="shadow menu-item-card">
+                    <img src="https://cdn.pixabay.com/photo/2016/01/05/13/58/apple-1122537_1280.jpg" class="dry_fruits-img mt-2 mb-3"/>
+                    <h1 class="menu-card-title">Apple</h1>
+                    <p class="menu_card_para">This nutritious fruit offers multiple health benefits. Apples may lower your chance of developing cancer, diabetes, and heart disease. Research says apples may also help you lose weight while improving your gut and brain health.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 p-3 mb-3">
+                <div class="shadow menu-item-card">
+                    <img src="https://media.istockphoto.com/id/95843102/photo/grapes-cluster.jpg?s=1024x1024&w=is&k=20&c=0z5ML-BXyFQuKDMdu5_n_rcMrrLguqCPbnxWFr3QJPQ=" class="dry_fruits-img mt-2 mb-3"/>
+                    <h1 class="menu-card-title">Grapes</h1>
+                    <p class="menu_card_para">The nutrients in grapes may help protect against cancer, eye problems, cardiovascular disease, and other health conditions. Resveratrol is a key nutrient in grapes that may offer health benefits. Grapes are a good source of fiber, potassium, and a range of vitamins and other minerals.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 p-3 mb-3">
+                <div class="shadow menu-item-card">
+                    <img src="https://images.immediate.co.uk/production/volatile/sites/10/2022/02/2048x1365-Pomegranate-SEO-GettyImages-502425210-0adfb4c.jpg?quality=90&resize=940,627" class="dry_fruits-img mt-2 mb-3"/>
+                    <h1 class="menu-card-title">Pomegranate</h1>
+                    <p class="menu_card_para">Pomegranates are rich in polyphenols. There is some evidence that polyphenols help protect against diseases in your heart and blood vessels, such as: Atherosclerosis, a buildup of cholesterol and fats in your arteries that is a common cause of heart disease.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 p-3 mb-3">
+                <div class="shadow menu-item-card">
+                    <img src="https://homegrown.in/upload/product/big100406930.jpg" class="dry_fruits-img mt-2 mb-3"/>
+                    <h1 class="menu-card-title">Chikoo</h1>
+                    <p class="menu_card_para">The leaves of chickoo plant are imbued with vital nutrients and plant compounds, which has proven effects in healing mouth ulcers. Sapodilla fruit balances vata and pitta doshas, while it increases kapha dosha. The light, cold and vipaka traits of sapodilla is useful for treating gastritis and other stomach woes.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="healthy-food-section pt-5 pb-5 m-5" id="deliveryPaymentSection"> 
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-5 mb-3">
+                <img src="https://static.wixstatic.com/media/94982f_48ed3886e31440f1abaf6adb618baedd~mv2.jpg/v1/fill/w_2500,h_1421,al_c/94982f_48ed3886e31440f1abaf6adb618baedd~mv2.jpg" class="health_img_card w-75 md-3"/>
+            </div>
+            <div class="col-12 col-md-7 mb-3">
+                <h1 class="healthy-food-section-heading">Fresh,heaithy,Organic,Delicious Fruits</h1>
+                <p class="healthy-food-section-description">Say no to harmful chemicals and go fully Organic with our range of fresh fruits.Pamper your body and your senses with the the true and Unadulterated gifts from mother nature.With the True and Unadulterated gifts from mother nature.</p>
+                <button class="custom-button">Watch video</button>
+            </div>
+            <div class="col-12 col-md-5 mb-3">
+                <img src="https://img.freepik.com/free-vector/modern-shopping-banner-design-background_1017-16285.jpg" class="health_img_card w-75 md-3"/>
+            </div>
+            <div class="col-12 col-md-7 mb-3">
+                <h1 class="healthy-food-section-heading">Dlivery and Payment</h1>
+                <p class="healthy-food-section-description">Enjoy hassle-free payment with the plenitude of payment options available for you.Get live tracking and locte your food on a live map.It's quite a sight to see your food arrive to your door.Plus,you get a 5% discount on every order every time you pay online.</p>
+                <button class="custom-button">Watch video</button>
+            </div>
+        
+           
+                <div class="mt-4 mb-3">
+                    <img src="https://www.freeiconspng.com/thumbs/credit-card-icon-png/mastercard-credit-card-icon-13.png" class="payment-card-img"/>
+                    <img src="https://www.clipartmax.com/png/middle/285-2858689_6-months-interest-free-on-shutters-weekly-and-fortnightly-credit-card-logos.png" class="payment-card-img"/>
+                    <img src="https://e7.pngegg.com/pngimages/591/646/png-clipart-icici-bank-credit-card-logo-first-data-credit-card-text-logo-thumbnail.png" class="payment-card-img"/>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgb2Ogz29-1zk52EisuGarLCSx4WtsCbvhjA&s" class="payment-card-img"/>
+                </div>
+                <div class="col-12 thank-you-bg-section mt-5 pl-3 mb-4">
+                    <h1 class="healthy-food-section-heading">Thank you for being a valuable customer to us.</h1>
+                    <p class="healthy-food-section-description">We have a Surprise for you</p>
+                    <img src="https://www.greenhandle.in/blog/wp-content/uploads//2017/06/gift-boxes-cover.jpg" class="w-50 mb-4"/>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="follow_us_section pt-5 pb-5" id="followUsSection">
+    <div class="container">
+        <div class="row">
+            <div class="col-12" id="followUsSection">
+                <h1 class="follow_us_section_heading">Follow us</h1>
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+                <div class="follow_us_icon_container">
+                    <i class="fa-brands fa-twitter icon"></i>
+                </div>
+                <div class="follow_us_icon_container">
+                    <i class="fa-brands fa-instagram icon"></i>
+                </div>
+                <div class="follow_us_icon_container">
+                    <i class="fa-brands fa-facebook icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<div class="footer-section pt-5 pb-5">
+
+</div> 
+</body>
+</html>
